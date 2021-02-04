@@ -1,0 +1,25 @@
+<html>
+	<head>
+        <title>log in</title>
+        <link rel="stylesheet"type="text/css" href="/public/css/login.css ">
+	</head>
+	<body>
+		<div class="container">
+			<h1> LOGIN </h1>
+         <form class="form1" action='/validate' id="form" method="POST">
+			 <label>Email:</label>
+			 <input type="text" placeholder="Email" id="email" name="email">
+			 <br>
+			 <br>
+			 <label>Password:</label>
+             <input type="text" placeholder="Password" id="pass" name="pass">
+             <p>If you don't have an account?<a href="/views/sign.html">SIGN UP</a></p>
+             <button onclick="functionemail()" >
+                 SUBMIT
+             </button>
+             <script src="/public/js/login.js"></script>
+		 </form>	
+        </div>
+        
+	</body>
+</html>

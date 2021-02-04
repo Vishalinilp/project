@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tite>ejs</tite>
+    </head>
+    <body>
+        <h2 style="text-align:center">STUDENTS MARKSHEET</h2>
+        <form >
+            <table>
+                <tr>
+                    <th>S.no</th>   
+                <th>Name</th>
+                <th>RollNo</th>
+                <th>Email</th>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>Social</th>
+                <th>Average Marks</th>
+                </tr>
+                <tr>
+                    <% if(userdata.length!=0){%>
+                        <%var i=1;%>
+                        <%userdata.forEach(function(data){%>}
+                </tr>
+                <td><%=i;%></td>
+                <td><%=data.name%></td>
+                <td><%=data.rollno%></td>
+                <td><%=data.email%></td>
+                <td><%=data.maths%></td>
+                <td><%=data.science%></td>
+                <td><%=data.social%></td>
+               
+                <td><%=Math.round(data.maths+data.science+data.social)/3%></td>
+            </tr>
+            <%i++;})%>
+            <%}else{%>
+            <tr>
+                <td colspan="8">No Data Found</td>
+            
+            </tr>
+               <%}%>
+            
+            </table>
+        </form>
+    </body>
+</html>

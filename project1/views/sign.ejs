@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Page Title</title>
+        <link rel="stylesheet" type="text/css" href="/public/css/sign.css">
+	</head>
+	<body>
+		<div >
+			<form class="border" action='/check' id="form" method="POST">
+				<h1> Register </h1>
+				<label>
+					Name:
+				</label><br>
+				<input type="text" placeholder="Name" id="username" name="username"><br>
+				<label>
+					Roll Number:
+				</label><br>
+				<input type="text" placeholder="Roll number" id="roll" name="roll"><br>
+				<label>
+					Email:
+				</label><br>
+				<input type="text" placeholder="email" id="email" name="email"><br>
+				<label>
+					Password:
+				</label><br>
+				<input type="text" placeholder="Password" id="pass" name="pass"><br>
+				<label>
+					ConfirmPassword:
+				</label><br>
+				<input type="text" placeholder="Confirm password" id="con" name="con"><br>
+				
+				<div>
+					Gender:
+				<br>
+				Male<input type="checkbox">
+				<input type="checkbox">Female
+				
+				<input type="checkbox">Others
+				</div>
+				<br>
+				<button  onclick="functionemail()">
+					Register
+                    </button>
+                    <p> If you already have an account?<a href="/views/login.html">LOGIN</a></p>
+                    <script src="/public/js/sign.js"></script>
+			</form>
+        </div>
+        
+	</body>
+</html>
